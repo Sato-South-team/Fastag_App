@@ -133,8 +133,7 @@ namespace Fatag_App
                             string[] TagIdArray = ArrayTagData[2].Split(':');
                             if (TagIdArray.Length == 2)
                             {
-                                string TagId = TagIdArray[1].Trim();
-                               
+                                string TagId = TagIdArray[1].Trim();                              
                                 RfidWriteCommand = RfidWriteCommand.Replace("{EPCCODE}", "0000000000" + Barcodedata);
                                 RfidWriteCommand = RfidWriteCommand.Replace("{ASSETCODE}", Barcodedata);
                                 RfidWriteCommand = RfidWriteCommand.Replace("{LOCATION}", Location);
