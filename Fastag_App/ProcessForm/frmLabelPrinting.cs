@@ -126,6 +126,7 @@ namespace Fatag_App
                     string Location = dt.Rows[i]["Asset Location"].ToString();
                     if (receiveData != null)
                     {
+
                         string TagDetails = ControlCharConvert(Utils.ByteArrayToString(receiveData));
                         string[] ArrayTagData = TagDetails.Split(',');
                         if (ArrayTagData.Length >= 2)
